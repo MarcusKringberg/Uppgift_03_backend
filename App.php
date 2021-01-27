@@ -37,7 +37,7 @@ class App
         if(isset($_GET['show']))
          $show =$_GET['show'];
          else{
-         echo json_encode("{ Du maste skriva in hur manga skivor som ska visas. Skriv ? show= och sedan antalet skivor i webblasaren }");
+         echo ( "Du maste skriva in hur manga skivor som ska visas. Skriv ? show= och sedan antalet skivor i webblasaren");
          system(exit);}
 
          
@@ -71,11 +71,13 @@ class App
         $result .= "</div>";
         echo $result;
          }
-        else{
-            $result.=$value['error'];
-        echo json_encode($value['error']);
-        exit;}}
+         else{
+         echo json_encode("{Felaktigt varde pa variabeln show. Vardet pa variabeln show maste vara mellan 1 och 10}");
+         exit;}
+
+        
     }
+}
 }
 
 

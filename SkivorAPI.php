@@ -71,14 +71,13 @@ $diskArray = [
     ),
     array(
         "id"=>10,
-        "title"=>" Amitas och Televinkens trafikskiva",
+        "title"=>" Anitas och Televinkens trafikskiva",
         "picture"=> "Anitas_och_Televinkens_trafikskiva.jpg",
         "description"=>"Skiva med Anita och Televinken som gör en resa till landet och pratar om trafikregler",
         "price"=>"100 kr"
     ),
-    array(
-        "error"=>"Felaktigt varde pa variabeln show. Värdet pa variabeln show måste vara mellan 1 och 10",
-    )
+    
+    
     ];
 // 4. Konvertera PHP-arrayen till en JSON-string.
 $json = json_encode($diskArray, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);
