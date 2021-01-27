@@ -40,10 +40,12 @@ class App
          echo json_encode("{ Du maste skriva in hur manga skivor som ska visas. Skriv ? show= och sedan antalet skivor i webblasaren }");
          system(exit);}
 
-
          
+
+
+         foreach ($array as $key => $value){
+       
          if ($show > 0 && $show <= 10){
-         foreach ($array as $key => $value) {
             if($key == $show && isset($_GET['show']))
             break;
             $picture = $value['picture'];
@@ -65,20 +67,38 @@ class App
                         </div>
                     </div>
                 </div>";
-        }
+        
         $result .= "</div>";
         echo $result;
-        
+         }
+        else{
+            $result.=$value['error'];
+        echo json_encode($value['error']);
+        exit;}}
     }
-    
-    else{ 
-    echo json_encode("{Felaktigt varde pa variabeln show. Vardet pa variabeln show maste vara mellan 1 och 10.}");
-    exit;}
+}
+
+
+
+         
+         
+         
         
-        }
+         
+         
+    
+
+        
+         
+        
+    
+    
+    
+        
+        
         
 
     
     
-}
+
 
