@@ -1,16 +1,18 @@
 <?php include_once('App.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Markus och Christians Musikhandel</title>
+  <title>Marcus och Christians Musikhandel</title>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <!-- Custom styles for this template -->
 </head>
+
 <body>
   <!-- Page Content -->
   <div class="container">
@@ -23,7 +25,7 @@
       <!-- /.col-lg-3 -->
       <div class="col-lg-9">
         <div class="row">
-        <?php App::main(); ?>
+          <?php App::main(); ?>
         </div>
         <!-- /.row -->
       </div>
@@ -43,4 +45,5 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
